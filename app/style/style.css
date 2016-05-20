@@ -1,0 +1,35 @@
+body {
+	background-image: scr="app/style/Walt.png";
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.title {
+    margin-bottom: 60px;
+    padding-bottom:  300px;
+}
+
+
+div {
+    font-size: 20px;
+    width: 100%;
+}
+
+
+input {
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+td {
+    background-color: white;
+}
+
+.search, .info {
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+

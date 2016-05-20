@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jive Whitman</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/toastr/toastr.css" />
+    <!-- endbower -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/app/style/style.css">
+    <!-- endinject -->
+</head>
+<div class="title">
+    <h1 style="background-color: transparent; text-align: center; border-style: none; font-weight: normal; color: white">What you say Whitman!</h1>
+    <br>
+    <h2 style="background-color: transparent; text-align: center; border-style: none; font-weight: normal; color: white">O Captain! My Captain!</h2>
+</div>
+
+<body background="app/style/Walt.png">
+    <!-- Jombo Tron -->
+    <div class="container">
+        <div>
+            <!-- Poem Controller -->
+            <div class="container" ng-controller="PoemController as vm">
+                <div class="row">
+                    <p class="col-sm-6">Original
+                        <br>
+                        <textarea style="width: 500px; height: 300px">The ship has weather'd every rack, the prize we sought is won, The port is near, the bells I hear, the people all exulting, While follow eyes the steady keel, the vessel grim and daring; But O heart! heart! heart! O the bleeding drops of red, Where on the deck my Captain lies, Fallen cold and dead. O Captain! my Captain! rise up and hear the bells; Rise up--for you the flag is flung--for you the bugle trills, For you bouquets and ribbon'd wreaths--for you the shores a-crowding, For you they call, the swaying mass, their eager faces turning; Here Captain! dear father! This arm beneath your head! It is some dream that on the deck, You've fallen cold and dead. My Captain does not answer, his lips are pale and still, My father does not feel my arm, he has no pulse nor will, The ship is anchor'd safe and sound, its voyage closed and done, From fearful trip the victor ship comes in with object won; Exult O shores, and ring O bells! But I with mournful tread, Walk the deck my Captain lies, Fallen cold and dead</textarea>
+                    </p>
+                    <p class="col-sm-6">Translated
+                        <br>
+                        <textarea ng-model="vm.Response" style="width: 500px; height: 300px">
+                        </textarea>
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <!-- ./Input End -->
+        <!-- <pre>{{vm.JiveResponse | json}}</pre> -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/toastr/toastr.js"></script>
+        <script src="bower_components/lodash/lodash.js"></script>
+        <script src="bower_components/moment/moment.js"></script>
+        <!-- endbower -->
+        <!-- inject:js -->
+        <script src="/app/app.js"></script>
+        <script src="/app/jive/JiveController.js"></script>
+        <script src="/app/jive/JiveFactory.js"></script>
+        <script src="/app/jive/JiveInterceptor.js"></script>
+        <script src="/app/poem/poemController.js"></script>
+        <script src="/app/poem/poemFactory.js"></script>
+        <script src="/app/speech/speechContoller.js"></script>
+        <script src="/app/speech/speechFactory.js"></script>
+        <script src="/app/speech/speechInterceptor.js"></script>
+        <!-- endinject -->
+</body>
+
+</html>
